@@ -7,8 +7,17 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    let NomesJ = [];    
+
     //PROCESSAMENTO
     
+    for (const joao of listaDeNomes) {
+        if (joao.includes("João") || joao.includes("Joao")){
+            NomesJ.push(joao);
+        }
+    }
+    alert(`Esses são os nomes que contem João: ${NomesJ}`)
     //SAÍDA
 
 </script>

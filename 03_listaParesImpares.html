@@ -7,10 +7,22 @@
 
     //ENTRADA
 
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let NPar = [];
+    let NÍmpar = [];
 
     //PROCESSAMENTO
 
+    for (const numero of listaDeNumeros) {
+        if(numero % 2 == 0){
+            NPar.push(numero)
+        }
+        else{
+            NÍmpar.push(numero)
+        }
+    }
 
+        alert(`Pares Crescentes:${NPar.sort((a, b) => a-b).join(", ")} \nPares Decrescentes:${NPar.sort((a, b) => b-a).join(", ")} \nÍmpares Crescentes:${NÍmpar.sort((a, b) => a-b).join(", ")} \nÍmpares Decrescentes:${NÍmpar.sort((a, b) => b-a).join(", ")}`)
     //SAÍDA
 
 </script>
